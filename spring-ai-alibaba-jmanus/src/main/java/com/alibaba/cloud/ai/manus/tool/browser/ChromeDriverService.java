@@ -219,9 +219,6 @@ public class ChromeDriverService implements IChromeDriverService {
 		// Skip browser download if browsers are already installed
 		System.setProperty("PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD", "1");
 
-		// Set Playwright driver, by default only download chromium
-		System.setProperty("playwright.driver.impl", "com.alibaba.cloud.ai.manus.playwright.ManusDriverJar");
-
 		// Try to create Playwright instance using Spring Boot initializer
 		Playwright playwright = null;
 		try {
